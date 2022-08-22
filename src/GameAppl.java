@@ -13,6 +13,7 @@ public class GameAppl {
         String output = "";
         while (!output.equals("cows:0 bulls:4")){
             String userNum = reader.readLine();
+            history.add(userNum);
             output = countAnimals(num,userNum);
             history.add(output);
             System.out.println(output);
